@@ -1,0 +1,119 @@
+{
+  "title": "Setting",
+  "uri": "/setting",
+  "menu": true,
+  "element": [
+    {
+      "name": "style",
+      "type": "ACStyle",
+      "value": "label+input,label+select{position:sticky;left:120px;width:230px!important;box-sizing:border-box;}"
+    },
+    {
+      "name": "header",
+      "type": "ACText",
+      "value": "<h2>센서 및 LED 세팅</h2>",
+      "style": "text-align:center;color:#2f4f4f;"
+    },
+    {
+      "name": "caption",
+      "type": "ACText",
+      "value": "D0<br>      D1:scl<br>      D2:sda<br>      D3:HIGH Run, LOW Flash,10k Pull-up<br>      D4:10k pull-up, BUILTIN_LED<br>      D5:SCK<br>      D6:MISO<br>      D7:MOSI<br>      D8:10k pull-down, SS<br> 버튼은 input_pullup에 연결해야 합니다",
+      "style": "font-family:serif;color:#4682b4;"
+    },
+    {
+      "name": "threadhold",
+      "type": "ACInput",
+      "value": "900",
+      "label": "감지거리"
+    },
+    {
+      "name": "direction",
+      "type": "ACSelect",
+      "label": "감지방향",
+      "option": [
+        "좌->우",
+        "우->좌",
+        "위->아래",
+        "아래->위"
+      ]
+    },
+    {
+      "name": "led1",
+      "type": "ACSelect",
+      "label": "LED1",
+      "option": [
+        "D0",
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7",
+        "D8"
+      ],
+      "selected": 7
+    },
+    {
+      "name": "led2",
+      "type": "ACSelect",
+      "label": "LED2",
+      "option": [
+        "D0",
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7",
+        "D8"
+      ],
+      "selected": 8
+    },
+    {
+      "name": "button",
+      "type": "ACSelect",
+      "label": "버튼",
+      "option": [
+        "D0",
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "사용안함"
+      ],
+      "selectd": 9
+    },
+    {
+      "name": "modality",
+      "type": "ACSelect",
+      "label": "검사실",
+      "option": [
+        "위장조영",
+        "유방촬영"
+      ]
+    },
+    {
+      "name": "save",
+      "type": "ACSubmit",
+      "value": "저장",
+      "uri": "/setting_save"
+    },
+    {
+      "name": "discard",
+      "type": "ACSubmit",
+      "value": "뒤로",
+      "uri": "/_ac"
+    },
+    {
+      "name": "js",
+      "type": "ACElement",
+      "value": "<script type='text/javascript'>function multi() {document.getElementById('answer').innerHTML=3*document.getElementById('multiplier').value;}</script>"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+[
+  {
+    "name": "threadhold",
+    "type": "ACInput",
+    "value": "900",
+    "label": "감지거리",
+    "pattern": "",
+    "placeholder": "",
+    "apply": "text"
+  },
+  {
+    "name": "direction",
+    "type": "ACSelect",
+    "option": [
+      "좌->우",
+      "우->좌",
+      "위->아래",
+      "아래->위"
+    ],
+    "label": "감지방향",
+    "selected": 1
+  },
+  {
+    "name": "led1",
+    "type": "ACSelect",
+    "option": [
+      "D0",
+      "D1",
+      "D2",
+      "D3",
+      "D4",
+      "D5",
+      "D6",
+      "D7",
+      "D8"
+    ],
+    "label": "LED1",
+    "selected": 7
+  },
+  {
+    "name": "led2",
+    "type": "ACSelect",
+    "option": [
+      "D0",
+      "D1",
+      "D2",
+      "D3",
+      "D4",
+      "D5",
+      "D6",
+      "D7",
+      "D8"
+    ],
+    "label": "LED2",
+    "selected": 8
+  },
+  {
+    "name": "button",
+    "type": "ACSelect",
+    "option": [
+      "D0",
+      "D1",
+      "D2",
+      "D3",
+      "D4",
+      "D5",
+      "D6",
+      "D7",
+      "D8",
+      "사용안함"
+    ],
+    "label": "버튼",
+    "selected": 9
+  },
+  {
+    "name": "modality",
+    "type": "ACSelect",
+    "option": [
+      "위장조영",
+      "유방촬영"
+    ],
+    "label": "검사실",
+    "selected": 1
+  }
+]
